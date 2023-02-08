@@ -371,7 +371,7 @@ export const parseGuardStates = ({
         : 10;
     states.isLimitReached = !canPayFor;
     if (!canPayFor)
-      states.messages.push("Mint limit for each user has reached.");
+      states.messages.push("Mint Limit Reached");
     states.canPayFor = Math.min(states.canPayFor, canPayFor);
   }
 
@@ -382,7 +382,7 @@ export const parseGuardStates = ({
       0
     );
     states.isLimitReached = !canPayFor;
-    if (!canPayFor) states.messages.push("Readeem limit has reached.");
+    if (!canPayFor) states.messages.push("Redeem limit has reached.");
     states.canPayFor = Math.min(states.canPayFor, canPayFor);
   }
 
@@ -391,7 +391,7 @@ export const parseGuardStates = ({
     let canPayFor = Math.floor(
       balance / (guards.payment?.sol.amount + 0.012 * LAMPORTS_PER_SOL)
     );
-    if (!canPayFor) states.messages.push("Don't have enough sol to pay");
+    if (!canPayFor) states.messages.push("Not enough SOL");
     states.canPayFor = Math.min(states.canPayFor, canPayFor);
   }
 

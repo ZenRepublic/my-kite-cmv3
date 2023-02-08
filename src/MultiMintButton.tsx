@@ -346,7 +346,7 @@ export const MultiMintButton = ({
             ) : isMinting || loading ? (
               <CircularProgress />
             ) : (
-              "MINT"
+              "CLICK TO MINT"
             )
           ) : isEnded ? (
             "ENDED"
