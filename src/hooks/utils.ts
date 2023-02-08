@@ -428,7 +428,7 @@ export const parseGuardStates = ({
 
     if (!canPayFor)
       states.messages.push(
-        `Don't have enough ${guards.burn?.token.symbol || "token"} to burn.`
+        `${guards.burn?.token.symbol || "token"} not found in wallet.`
       );
 
     states.canPayFor = Math.min(states.canPayFor, canPayFor);

@@ -357,7 +357,6 @@ const Home = (props: HomeProps) => {
 
   const { guardLabel, guards, guardStates, prices } = useMemo(() => {
     const guardLabel = defaultGuardGroup;
-    console.log(defaultGuardGroup);
     return {
       guardLabel,
       guards:
