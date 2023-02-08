@@ -602,12 +602,12 @@ const Home = (props: HomeProps) => {
                 <InfoRow>
                 {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
-                    <p>Group Size</p>
+                    <p>Size</p>
                     <p>{candyMachineV3.items.available}{" "}</p>
                   </InfoBox>
                 )} {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
-                    <p>Mint Price</p>
+                    <p>Price</p>
                     <p>{candyPrice}</p>
                   </InfoBox>
                 )}
