@@ -1,11 +1,11 @@
 /* Need to change colors? Do it here, these are the main colors that are used all over the website */
 :root {
-  --main-background-color: #0E0E0E;
-  --alt-background-color: #202020;
+  --main-background-color: #eb793f;
+  --alt-background-color: #9c9c9c;
   --white: #fff;
-  --black: #000;
-  --primary: #4E44CE;
-  --error: #D92D20;
+  --black: #532b54;
+  --primary: #eb793f;
+  --error: #de4c4c;
 }
 
 /* Font: Plus Jakarta Sans is being loaded here from Google Fonts and is used all over the website */
