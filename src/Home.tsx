@@ -337,12 +337,6 @@ export interface HomeProps {
   candyMachineId: PublicKey;
 }
 const candyMachinOps = {
-  allowLists: [
-    {
-      list: require("../cmv3-demo-initialization/allowlist.json"),
-      groupLabel: "paid"
-    },
-  ],
 };
 const Home = (props: HomeProps) => {
   const { connection } = useConnection();
