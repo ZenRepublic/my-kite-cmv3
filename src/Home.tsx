@@ -94,7 +94,7 @@ const Other = styled.div`
 const ImageWrap = styled.div`
   aspect-ratio: 1 / 1;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/2832432/pexels-photo-2832432.png);
+  background-image: url(https://i.ibb.co/167hNyy/twtpfp-big-min.png);
   border-radius: 16px;
 `
 const Image = styled.div`
@@ -517,7 +517,7 @@ const Home = (props: HomeProps) => {
   } else if (prices.payment.filter(({kind}) => kind === "sol").reduce((a, { price }) => a + price, 0)) {
     candyPrice = `◎ ${solCost}`
   } else {
-    candyPrice = "1 NFT"
+    candyPrice = "1 Dev Pass"
   }
 
   console.log(candyPrice);
