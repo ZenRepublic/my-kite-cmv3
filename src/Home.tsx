@@ -398,7 +398,7 @@ const Home = (props: HomeProps) => {
   }, [wallet, connection]);
 
   useEffect(() => {
-    if (mintedItems?.length === 0) throwConfetti();
+    // if (mintedItems?.length === 0) throwConfetti();
   }, [mintedItems]);
 
   const openOnSolscan = useCallback((mint) => {
