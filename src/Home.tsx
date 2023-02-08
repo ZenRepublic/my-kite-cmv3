@@ -598,26 +598,25 @@ const Home = (props: HomeProps) => {
             </Column>
             <Column>
               <Content>
-                <CollectionName>Collection Name</CollectionName>
+                <CollectionName>Solana 75</CollectionName>
                 <InfoRow>
                 {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
-                    <p>Total items</p>
+                    <p>Group Size</p>
                     <p>{candyMachineV3.items.available}{" "}</p>
                   </InfoBox>
                 )} {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
-                    <p>Price</p>
+                    <p>Mint Price</p>
                     <p>{candyPrice}</p>
                   </InfoBox>
                 )}
                   <IconRow>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Globe></Globe></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
+                    <a href="https://twitter.com/solana75devs" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
+                    <a href="https://discord.gg/3rwm4zKuHM" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
                   </IconRow>
                 </InfoRow>
-                <CollectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</CollectionDescription>
+                <CollectionDescription>The legendary 75 developers who carry Solana ecosystem on their backs by innovating and pushing the tech to the limit.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
@@ -630,13 +629,13 @@ const Home = (props: HomeProps) => {
                     }}
                   />
                 ) : !wallet?.publicKey ? (
-                  <ConnectWallet>Connect Wallet</ConnectWallet>
+                  <ConnectWallet>Connect</ConnectWallet>
                   // ) : !guardStates.canPayFor ? (
                   //   <h1>You cannot pay for the mint</h1>
                 ) : !guardStates.isWalletWhitelisted ? (
                   <PrivateWrap>
-                  <PrivateText>Mint is private</PrivateText>
-                  <PrivateSubtext>You’re currently not allowed to mint. Try again at a later time.</PrivateSubtext>
+                  <PrivateText>Private Mint</PrivateText>
+                  <PrivateSubtext>Your wallet is not whitelisted to mint.</PrivateSubtext>
                   </PrivateWrap>
                 ) : (
                   <>
@@ -672,7 +671,7 @@ const Home = (props: HomeProps) => {
                 <ProgressbarWrap>
                 {guardStates.isStarted && wallet.publicKey && (
                   <MintCount>
-                    Total minted {candyMachineV3.items.redeemed} /  
+                    Minted Amount: {candyMachineV3.items.redeemed} /  
                     {candyMachineV3.items.available}{" "}
                     {(guards?.mintLimit?.mintCounter?.count ||
                       guards?.mintLimit?.settings?.limit) && (
@@ -727,7 +726,7 @@ export default Home;
 const renderGoLiveDateCounter = ({ days, hours, minutes, seconds }: any) => {
   return (
     <StartTimerWrap>
-      <StartTimerSubtitle>Mint opens in:</StartTimerSubtitle>
+      <StartTimerSubtitle>Starts in:</StartTimerSubtitle>
       <StartTimer>
       <StartTimerInner elevation={1}>
         <span>{days}</span>Days
