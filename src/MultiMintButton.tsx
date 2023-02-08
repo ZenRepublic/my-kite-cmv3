@@ -354,12 +354,12 @@ export const MultiMintButton = ({
             "UNAVAILABLE"
           )}
 
-          {!isSoldOut && isActive && (
+          {/* {!isSoldOut && isActive && (
         <EstimatedCost>
           Transaction Fee: {costSolUI(totalSolCost)} SOL
           {totalTokenCostsString}
         </EstimatedCost>
-        )}
+        )} */}
         </CTAButton>
 
           <NumberInput>
