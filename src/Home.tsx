@@ -340,7 +340,7 @@ const candyMachinOps = {
   allowLists: [
     {
       list: require("../cmv3-demo-initialization/allowlist.json"),
-      groupLabel: "free"
+      groupLabel: "paid"
     },
   ],
 };
