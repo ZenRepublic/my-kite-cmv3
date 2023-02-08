@@ -448,7 +448,7 @@ const Home = (props: HomeProps) => {
       // debugger;
       candyMachineV3
         .mint(quantityString, {
-          groupLabel: "paid",
+          groupLabel: guardLabel,
           nftGuards,
         })
         .then((items) => {
