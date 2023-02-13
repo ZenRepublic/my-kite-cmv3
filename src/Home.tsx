@@ -514,7 +514,7 @@ const Home = (props: HomeProps) => {
   } else if (prices.payment.filter(({kind}) => kind === "sol").reduce((a, { price }) => a + price, 0)) {
     candyPrice = `◎ ${solCost}`
   } else {
-    candyPrice = "1 Dev Pass"
+    candyPrice = "1 DEVPASS"
   }
 
   console.log(candyPrice);
